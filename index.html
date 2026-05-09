@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-
+ 
 /* ══ TOKENS ══ */
 :root{
   --accent:#C8FF00;
@@ -25,7 +25,7 @@
   --r-xs:5px;
   transition: background .3s, color .3s;
 }
-
+ 
 /* ── DARK ── */
 [data-theme="dark"]{
   --bg:#080809;
@@ -38,7 +38,7 @@
   --text2:#7a7a85;
   --text3:#36363d;
 }
-
+ 
 /* ── LIGHT ── */
 [data-theme="light"]{
   --bg:#f4f4f0;
@@ -51,10 +51,10 @@
   --text2:#666668;
   --text3:#b0b0b5;
 }
-
+ 
 html,body{height:100%;overflow:hidden;background:var(--bg)}
 body{font-family:'Outfit',sans-serif;color:var(--text);display:flex;flex-direction:column;height:100dvh;transition:background .3s,color .3s}
-
+ 
 /* ══ HEADER ══ */
 header{
   background:var(--bg);
@@ -69,7 +69,7 @@ header{
 .logo-dot{width:8px;height:8px;background:var(--accent);border-radius:2px;display:inline-block}
 .header-right{display:flex;align-items:center;gap:10px}
 .header-date{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase}
-
+ 
 /* ── THEME TOGGLE ── */
 .theme-toggle{
   width:36px;height:36px;border-radius:var(--r-sm);border:1px solid var(--border);
@@ -77,11 +77,11 @@ header{
   color:var(--text2);transition:all .2s;font-size:16px;
 }
 .theme-toggle:hover{border-color:var(--accent);color:var(--accent)}
-
+ 
 /* ══ MAIN ══ */
 main{flex:1;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;padding-bottom:6px}
 main::-webkit-scrollbar{display:none}
-
+ 
 /* ══ BOTTOM NAV ══ */
 .bottom-nav{
   background:var(--surface);border-top:1px solid var(--border);
@@ -101,24 +101,24 @@ main::-webkit-scrollbar{display:none}
   width:24px;height:2px;background:var(--accent);border-radius:0 0 3px 3px;
 }
 .nav-btn:hover:not(.active){color:var(--text2)}
-
+ 
 /* ══ PAGE ══ */
 .page{display:none;padding:14px 14px 0}
 .page.active{display:block;animation:fadeUp .25s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-
+ 
 /* ══ TYPOGRAPHY ══ */
 .page-title{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:1px;color:var(--text)}
 .page-sub{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-top:2px}
 .section-head{padding:12px 0 14px}
-
+ 
 /* ══ CARD ══ */
 .card{
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
   padding:16px;margin-bottom:10px;
 }
 .card-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-
+ 
 /* ══ STATS ══ */
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
 .stat-box{
@@ -127,7 +127,7 @@ main::-webkit-scrollbar{display:none}
 }
 .stat-val{font-family:'Bebas Neue',sans-serif;font-size:34px;color:var(--accent);line-height:1;letter-spacing:.5px}
 .stat-lbl{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px}
-
+ 
 /* ══ STREAK ══ */
 .streak-card{
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
@@ -144,7 +144,7 @@ main::-webkit-scrollbar{display:none}
   padding:4px 10px;background:var(--orange-dim);border:1px solid rgba(255,107,0,.2);
   border-radius:20px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--orange);letter-spacing:1px;text-transform:uppercase;
 }
-
+ 
 /* ══ WEEK STRIP ══ */
 .week-strip{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:14px}
 .week-cell{display:flex;flex-direction:column;align-items:center;gap:4px}
@@ -156,7 +156,7 @@ main::-webkit-scrollbar{display:none}
 .week-dot.today{border-color:var(--orange);color:var(--orange)}
 .week-dot.today.done{background:var(--accent);border-color:var(--accent);color:#000}
 .week-lbl{font-family:'JetBrains Mono',monospace;font-size:7px;color:var(--text3);letter-spacing:1px;text-transform:uppercase}
-
+ 
 /* ══ BUTTONS ══ */
 .btn{
   border:none;cursor:pointer;font-family:'Outfit',sans-serif;font-weight:600;
@@ -173,7 +173,7 @@ main::-webkit-scrollbar{display:none}
 .btn-sm{padding:6px 12px;font-size:12px}
 .btn-full{width:100%;justify-content:center}
 .btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-
+ 
 /* ══ INPUTS ══ */
 input[type=text],input[type=number],select,textarea{
   background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);
@@ -188,7 +188,7 @@ textarea{resize:vertical;min-height:60px}
 }
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .form-row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
-
+ 
 /* ══ TAGS ══ */
 .tag{
   display:inline-block;padding:3px 8px;border-radius:20px;
@@ -199,7 +199,7 @@ textarea{resize:vertical;min-height:60px}
 .tag-blue{background:var(--blue-dim);color:var(--blue);border:1px solid rgba(61,154,255,.15)}
 .tag-gray{background:rgba(128,128,128,.08);color:var(--text3);border:1px solid var(--border)}
 .tag-red{background:rgba(255,68,68,.08);color:var(--red);border:1px solid rgba(255,68,68,.15)}
-
+ 
 /* ══ EXERCISE GRID ══ */
 .ex-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:16px}
 .ex-card{
@@ -211,7 +211,7 @@ textarea{resize:vertical;min-height:60px}
 .ex-icon{font-size:26px;margin-bottom:8px;display:block}
 .ex-name{font-size:13px;font-weight:700;margin-bottom:4px;line-height:1.2}
 .ex-muscle{font-size:11px;color:var(--text3);margin-top:4px}
-
+ 
 /* ══ FILTER BAR ══ */
 .filter-wrap{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:14px;scrollbar-width:none}
 .filter-wrap::-webkit-scrollbar{display:none}
@@ -221,7 +221,7 @@ textarea{resize:vertical;min-height:60px}
   letter-spacing:.3px;padding:6px 14px;cursor:pointer;transition:all .15s;white-space:nowrap;
 }
 .filter-btn.active,.filter-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-dim)}
-
+ 
 /* ══ ROUTINE ITEM ══ */
 .routine-item{
   display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);
@@ -234,11 +234,11 @@ textarea{resize:vertical;min-height:60px}
   width:42px;background:var(--card);border:1px solid var(--border);border-radius:4px;
   color:var(--text);font-family:'JetBrains Mono',monospace;font-size:12px;padding:4px 5px;text-align:center;
 }
-
+ 
 /* ══ PROGRESS BARS ══ */
 .prog-track{height:5px;background:var(--surface);border-radius:3px;overflow:hidden;margin:10px 0 5px}
 .prog-fill{height:100%;background:var(--accent);border-radius:3px;transition:width .5s cubic-bezier(.25,.46,.45,.94)}
-
+ 
 /* ══ SKILL PROGRESS BAR (multi-level) ══ */
 .skill-prog-track{height:8px;background:var(--surface);border-radius:4px;overflow:hidden;position:relative}
 .skill-prog-fill{height:100%;border-radius:4px;transition:width .5s ease}
@@ -246,7 +246,7 @@ textarea{resize:vertical;min-height:60px}
 .skill-prog-fill.lvl-1{background:var(--blue)}
 .skill-prog-fill.lvl-2{background:var(--orange)}
 .skill-prog-fill.lvl-3{background:var(--accent)}
-
+ 
 /* ══ LOG ENTRY ══ */
 .log-entry{
   display:flex;gap:12px;align-items:center;padding:12px;
@@ -260,13 +260,13 @@ textarea{resize:vertical;min-height:60px}
 .log-detail{flex:1;min-width:0}
 .log-summary{font-size:13px;font-weight:600;color:var(--text2);margin-bottom:5px}
 .log-tags{display:flex;flex-wrap:wrap;gap:4px}
-
+ 
 /* ══ MINI CHART ══ */
 .mini-chart{height:60px;display:flex;align-items:flex-end;gap:5px;padding:4px 0}
 .ch-bar{flex:1;background:var(--border);border-radius:3px 3px 0 0;min-height:4px;transition:background .2s}
 .ch-bar:last-child{background:var(--accent)}
 .chart-labels{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--text3);margin-top:4px;letter-spacing:.5px}
-
+ 
 /* ══ CHALLENGE CARD ══ */
 .challenge-card{
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
@@ -275,20 +275,20 @@ textarea{resize:vertical;min-height:60px}
 .challenge-card.active-challenge{border-color:rgba(200,255,0,.25)}
 .ch-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.5px;color:var(--text);margin-bottom:4px}
 .ch-desc{font-size:13px;color:var(--text2);line-height:1.5;margin-bottom:10px}
-
+ 
 /* ══ SAVED ROUTINE ══ */
 .saved-routine{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:14px;margin-bottom:10px}
 .sr-name{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.5px;color:var(--text)}
 .sr-meta{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--text3);letter-spacing:1px;margin-top:2px}
 .sr-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
-
+ 
 /* ══ SESSION ITEM ══ */
 .session-item{
   display:flex;justify-content:space-between;align-items:center;
   padding:8px 0;border-bottom:1px solid var(--border-soft);font-size:13px;font-weight:600;
 }
 .session-item:last-child{border-bottom:none}
-
+ 
 /* ══ OVERLOAD CARD ══ */
 .overload-card{
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
@@ -314,7 +314,7 @@ textarea{resize:vertical;min-height:60px}
 .delta-up{background:var(--accent-dim);color:var(--accent)}
 .delta-same{background:rgba(128,128,128,.08);color:var(--text3)}
 .delta-down{background:rgba(255,68,68,.08);color:var(--red)}
-
+ 
 /* ══ SKILLS ══ */
 .skill-path-item{
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
@@ -347,11 +347,11 @@ textarea{resize:vertical;min-height:60px}
 .step-name{font-size:13px;font-weight:700;margin-bottom:3px}
 .step-desc{font-size:12px;color:var(--text2);line-height:1.4}
 .step-target{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--accent);margin-top:4px}
-
+ 
 /* ══ SKILL FILTER TABS ══ */
 .skill-tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-bottom:14px;padding-bottom:4px}
 .skill-tabs::-webkit-scrollbar{display:none}
-
+ 
 /* ══ MODALS ══ */
 .modal-overlay{
   display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);
@@ -365,10 +365,10 @@ textarea{resize:vertical;min-height:60px}
 }
 .modal-handle{width:32px;height:3px;background:var(--border);border-radius:2px;margin:0 auto 18px}
 .modal-title{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.5px;margin-bottom:14px}
-
+ 
 /* ══ SHARE ══ */
 #share-preview-wrap{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:20px;position:relative;overflow:hidden}
-
+ 
 /* ══ NOTIFICATION ══ */
 .notif{
   position:fixed;top:66px;right:14px;background:var(--accent);color:#000;
@@ -379,48 +379,48 @@ textarea{resize:vertical;min-height:60px}
   box-shadow:0 4px 24px rgba(200,255,0,.3);
 }
 .notif.show{transform:translateX(0) translateY(0);opacity:1}
-
+ 
 /* ══ DIVIDER ══ */
 .divider{
   font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--text3);letter-spacing:2px;
   text-transform:uppercase;margin:14px 0 10px;display:flex;align-items:center;gap:10px;
 }
 .divider::after{content:'';flex:1;height:1px;background:var(--border)}
-
+ 
 /* ══ UTILS ══ */
 .flex-between{display:flex;justify-content:space-between;align-items:center}
 .flex-center{display:flex;align-items:center;gap:8px}
 .mt-sm{margin-top:8px}
 .mt{margin-top:12px}
-
+ 
 /* ══ CONGRATS ══ */
 .congrats{
   background:var(--accent-dim);border:1px solid rgba(200,255,0,.2);border-radius:var(--r-sm);
   padding:10px 14px;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--accent);
   letter-spacing:1px;margin-top:8px;display:flex;align-items:center;gap:8px;
 }
-
+ 
 /* ══ PROG HERO ══ */
 .prog-hero{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;margin-bottom:10px}
 .prog-big{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--accent);line-height:1;letter-spacing:-1px}
-
+ 
 /* ══ ANIM ══ */
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 .pulse{animation:pulse 1.5s infinite}
-
+ 
 /* ══ OVERLOAD HISTORY ══ */
 .overload-hist-item{
   display:flex;justify-content:space-between;align-items:center;
   padding:8px 0;border-bottom:1px solid var(--border-soft);font-size:12px;
 }
 .overload-hist-item:last-child{border-bottom:none}
-
+ 
 </style>
 </head>
 <body>
-
+ 
 <div class="notif" id="notif"></div>
-
+ 
 <!-- MODAL: Exercise detail -->
 <div class="modal-overlay" id="ex-modal" onclick="if(event.target===this)closeModal('ex-modal')">
   <div class="modal">
@@ -435,7 +435,7 @@ textarea{resize:vertical;min-height:60px}
     </button>
   </div>
 </div>
-
+ 
 <!-- MODAL: Share -->
 <div class="modal-overlay" id="share-modal" onclick="if(event.target===this)closeModal('share-modal')">
   <div class="modal">
@@ -452,7 +452,7 @@ textarea{resize:vertical;min-height:60px}
     </div>
   </div>
 </div>
-
+ 
 <!-- HEADER -->
 <header>
   <div class="logo"><div class="logo-dot"></div>CALFIT</div>
@@ -463,16 +463,16 @@ textarea{resize:vertical;min-height:60px}
     </button>
   </div>
 </header>
-
+ 
 <main>
-
+ 
 <!-- ══ HOME ══ -->
 <div class="page active" id="page-home">
   <div class="section-head">
     <div class="page-title" id="greeting">Buenas tardes</div>
     <div class="page-sub" id="home-date">Cargando...</div>
   </div>
-
+ 
   <!-- Streak hero -->
   <div class="streak-card">
     <div class="flex-between">
@@ -490,14 +490,14 @@ textarea{resize:vertical;min-height:60px}
     </div>
     <div class="week-strip" id="week-strip"></div>
   </div>
-
+ 
   <!-- Stats -->
   <div class="stats-row">
     <div class="stat-box"><div class="stat-val" id="stat-workouts">0</div><div class="stat-lbl">Sesiones</div></div>
     <div class="stat-box"><div class="stat-val" id="stat-week">0</div><div class="stat-lbl">Esta semana</div></div>
     <div class="stat-box"><div class="stat-val" id="stat-total-reps">0</div><div class="stat-lbl">Total reps</div></div>
   </div>
-
+ 
   <!-- Registrar -->
   <div class="card">
     <div class="card-label">Registrar entrenamiento</div>
@@ -521,7 +521,7 @@ textarea{resize:vertical;min-height:60px}
       <button class="btn btn-primary btn-sm" onclick="finishWorkout()"><i class="ti ti-check"></i> Terminar sesión</button>
     </div>
   </div>
-
+ 
   <!-- Última sesión -->
   <div class="card">
     <div class="flex-between" style="margin-bottom:10px">
@@ -531,7 +531,7 @@ textarea{resize:vertical;min-height:60px}
     <div id="last-workout-display" style="color:var(--text3);font-family:'JetBrains Mono',monospace;font-size:11px">Sin sesiones registradas</div>
   </div>
 </div>
-
+ 
 <!-- ══ EXERCISES ══ -->
 <div class="page" id="page-exercises">
   <div class="section-head">
@@ -548,7 +548,7 @@ textarea{resize:vertical;min-height:60px}
   </div>
   <div class="ex-grid" id="ex-grid"></div>
 </div>
-
+ 
 <!-- ══ ROUTINE ══ -->
 <div class="page" id="page-routine">
   <div class="section-head">
@@ -583,14 +583,14 @@ textarea{resize:vertical;min-height:60px}
   <div class="divider">Rutinas guardadas</div>
   <div id="saved-routines-list"></div>
 </div>
-
+ 
 <!-- ══ OVERLOAD (Sobrecarga Progresiva) ══ -->
 <div class="page" id="page-overload">
   <div class="section-head">
     <div class="page-title">Sobrecarga</div>
     <div class="page-sub">Progresión semana a semana</div>
   </div>
-
+ 
   <!-- Semana actual -->
   <div class="card">
     <div class="flex-between" style="margin-bottom:12px">
@@ -602,11 +602,11 @@ textarea{resize:vertical;min-height:60px}
       <button class="btn btn-primary btn-full" onclick="saveOverloadWeek()"><i class="ti ti-trending-up"></i> Guardar semana</button>
     </div>
   </div>
-
+ 
   <!-- Historial de semanas -->
   <div class="divider">Historial de semanas</div>
   <div id="overload-history"></div>
-
+ 
   <!-- Instrucciones -->
   <div class="card" style="border-color:rgba(200,255,0,.1);background:var(--accent-dim)">
     <div class="card-label" style="color:var(--accent)">Principios de sobrecarga</div>
@@ -617,14 +617,14 @@ textarea{resize:vertical;min-height:60px}
     </div>
   </div>
 </div>
-
+ 
 <!-- ══ SKILLS ══ -->
 <div class="page" id="page-skills">
   <div class="section-head">
     <div class="page-title">Skills</div>
     <div class="page-sub">Progresiones avanzadas</div>
   </div>
-
+ 
   <div class="skill-tabs" id="skill-filter-bar">
     <button class="filter-btn active" onclick="filterSkills('all',this)">Todos</button>
     <button class="filter-btn" onclick="filterSkills('empuje',this)">Empuje</button>
@@ -632,10 +632,10 @@ textarea{resize:vertical;min-height:60px}
     <button class="filter-btn" onclick="filterSkills('equilibrio',this)">Equilibrio</button>
     <button class="filter-btn" onclick="filterSkills('core',this)">Core</button>
   </div>
-
+ 
   <div id="skills-list"></div>
 </div>
-
+ 
 <!-- ══ PROGRESS ══ -->
 <div class="page" id="page-progress">
   <div class="section-head">
@@ -670,9 +670,9 @@ textarea{resize:vertical;min-height:60px}
   <div class="divider">Historial</div>
   <div id="workout-history"></div>
 </div>
-
+ 
 </main>
-
+ 
 <!-- ══ BOTTOM NAV ══ -->
 <nav class="bottom-nav">
   <button class="nav-btn active" onclick="showPage('home',this)">
@@ -694,7 +694,7 @@ textarea{resize:vertical;min-height:60px}
     <i class="ti ti-chart-bar"></i>Progreso
   </button>
 </nav>
-
+ 
 <script>
 /* ══ DATA ══ */
 const EXERCISES=[
@@ -714,7 +714,7 @@ const EXERCISES=[
   {id:'inverterow',name:'Remo Invertido',icon:'🔁',muscle:'Espalda / Bíceps',cat:'jale',level:'principiante',desc:'El mejor ejercicio para comenzar con jalones.',tips:['Cuerpo recto','Pecho al punto de apoyo','Controla la bajada'],sets:'3-5',reps:'10-20'},
   {id:'lunge',name:'Zancada',icon:'🚶',muscle:'Piernas / Glúteos',cat:'piernas',level:'principiante',desc:'Fuerza unilateral de piernas.',tips:['Rodilla trasera casi al suelo','Torso recto','Paso largo'],sets:'3-4',reps:'10-15/pierna'},
 ];
-
+ 
 /* ══ SKILL PATHS ══ */
 const SKILL_PATHS=[
   {
@@ -776,17 +776,17 @@ const SKILL_PATHS=[
     ]
   },
 ];
-
+ 
 /* ══ STATE ══ */
 let S={
   workouts:[],currentSession:[],savedRoutines:[],challenges:{},currentRoutineItems:[],selectedEx:null,
   overloadWeeks:[],skillProgress:{},theme:'dark'
 };
-
+ 
 /* ══ PERSIST ══ */
 function load(){try{const d=localStorage.getItem('calfit3');if(d)S={...S,...JSON.parse(d)}}catch(e){}}
 function save(){try{localStorage.setItem('calfit3',JSON.stringify(S))}catch(e){}}
-
+ 
 /* ══ THEME ══ */
 function toggleTheme(){
   S.theme=S.theme==='dark'?'light':'dark';
@@ -797,12 +797,12 @@ function applyTheme(){
   const btn=document.getElementById('theme-btn');
   btn.innerHTML=S.theme==='dark'?'<i class="ti ti-sun"></i>':'<i class="ti ti-moon"></i>';
 }
-
+ 
 /* ══ UTILS ══ */
 function notif(msg){const el=document.getElementById('notif');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2400)}
 function closeModal(id){document.getElementById(id).classList.remove('open')}
 function fmtReps(n){return n>=1000?Math.floor(n/1000)+'k':n}
-
+ 
 /* ══ NAVIGATION ══ */
 function showPage(id,btn){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
@@ -813,7 +813,7 @@ function showPage(id,btn){
   const r={home:renderHome,exercises:renderExercises,routine:renderRoutine,overload:renderOverload,skills:renderSkills,progress:renderProgress};
   r[id]&&r[id]();
 }
-
+ 
 /* ══ STREAK ══ */
 function computeStreak(){
   if(!S.workouts.length)return{streak:0,best:0,firstDate:null,totalDays:0};
@@ -838,7 +838,7 @@ function computeStreak(){
   const totalDays=Math.floor((today-first)/86400000)+1;
   return{streak,best,firstDate,totalDays};
 }
-
+ 
 /* ══ HOME ══ */
 function renderHome(){
   const h=new Date().getHours();
@@ -846,7 +846,7 @@ function renderHome(){
   const now=new Date();
   document.getElementById('home-date').textContent=now.toLocaleDateString('es-MX',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
   document.getElementById('header-date').textContent=now.toLocaleDateString('es-MX',{day:'numeric',month:'short'}).toUpperCase();
-
+ 
   const {streak,best,firstDate,totalDays}=computeStreak();
   document.getElementById('streak-days').textContent=streak;
   document.getElementById('streak-best').textContent=`Mejor: ${best} días`;
@@ -857,12 +857,12 @@ function renderHome(){
     document.getElementById('total-time').textContent=months>=1?months+' mes'+(months>1?'es':''):weeks>=1?weeks+' sem':'< 1 sem';
     document.getElementById('total-since').textContent=`${totalDays} días en total`;
   }else{document.getElementById('streak-since').textContent='Registra tu primer entreno';}
-
+ 
   document.getElementById('stat-workouts').textContent=S.workouts.length;
   const ws=new Date();ws.setDate(ws.getDate()-ws.getDay());ws.setHours(0,0,0,0);
   document.getElementById('stat-week').textContent=S.workouts.filter(w=>new Date(w.date)>=ws).length;
   document.getElementById('stat-total-reps').textContent=fmtReps(S.workouts.reduce((s,w)=>s+w.totalReps,0));
-
+ 
   const strip=document.getElementById('week-strip');strip.innerHTML='';
   const days=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
   const active=new Set(S.workouts.map(w=>w.date.split('T')[0]));
@@ -878,7 +878,7 @@ function renderHome(){
   document.getElementById('quick-ex-select').innerHTML=EXERCISES.map(e=>`<option value="${e.id}">${e.name}</option>`).join('');
   renderSessionList();renderLastWorkout();
 }
-
+ 
 function renderSessionList(){
   const el=document.getElementById('session-list');
   if(!S.currentSession.length){el.innerHTML='';return;}
@@ -892,7 +892,7 @@ function renderSessionList(){
     </div>`).join('')}
   </div>`;
 }
-
+ 
 function addQuickLog(){
   const sel=document.getElementById('quick-ex-select');
   const sets=parseInt(document.getElementById('q-sets').value)||3;
@@ -901,16 +901,16 @@ function addQuickLog(){
   S.currentSession.push({id:ex.id,name:ex.name,sets,reps});
   save();renderSessionList();notif(`${ex.name} añadido`);
 }
-
+ 
 function removeSessionItem(i){S.currentSession.splice(i,1);save();renderSessionList();}
-
+ 
 function finishWorkout(){
   if(!S.currentSession.length){notif('Agrega ejercicios primero');return;}
   const totalReps=S.currentSession.reduce((s,it)=>s+it.sets*it.reps,0);
   S.workouts.unshift({date:new Date().toISOString(),exercises:[...S.currentSession],totalReps});
   S.currentSession=[];save();renderHome();notif('¡Sesión guardada! 💪');
 }
-
+ 
 function renderLastWorkout(){
   const el=document.getElementById('last-workout-display');
   const btn=document.getElementById('share-last-btn');
@@ -920,11 +920,11 @@ function renderLastWorkout(){
   el.innerHTML=`<div class="log-tags" style="margin-bottom:8px">${w.exercises.map(e=>`<span class="tag tag-green">${e.name} ${e.sets}×${e.reps}</span>`).join('')}</div>
     <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3)">${fmtReps(w.totalReps)} reps · ${new Date(w.date).toLocaleDateString('es-MX',{weekday:'short',day:'numeric',month:'short'})}</div>`;
 }
-
+ 
 /* ══ EXERCISES ══ */
 let currentFilter='all';
 function renderExercises(){filterEx(currentFilter);}
-
+ 
 function filterEx(cat,btn){
   currentFilter=cat;
   document.querySelectorAll('#filter-bar .filter-btn').forEach(b=>b.classList.remove('active'));
@@ -938,7 +938,7 @@ function filterEx(cat,btn){
       <div style="margin-top:8px"><span class="tag ${e.level==='principiante'?'tag-green':e.level==='intermedio'?'tag-blue':'tag-orange'}">${e.level}</span></div>
     </div>`).join('');
 }
-
+ 
 function openExModal(id){
   const e=EXERCISES.find(x=>x.id===id);if(!e)return;
   S.selectedEx=id;
@@ -955,17 +955,17 @@ function openExModal(id){
     ${e.tips.map(t=>`<div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;font-size:13px;border-bottom:1px solid var(--border-soft)"><span style="color:var(--accent);font-weight:800;flex-shrink:0">→</span>${t}</div>`).join('')}`;
   document.getElementById('ex-modal').classList.add('open');
 }
-
+ 
 function addToRoutineFromModal(){
   if(!S.selectedEx)return;
   const e=EXERCISES.find(x=>x.id===S.selectedEx);if(!e)return;
   S.currentRoutineItems.push({id:e.id,name:e.name,sets:3,reps:10});
   save();notif(`${e.name} agregado a rutina`);closeModal('ex-modal');
 }
-
+ 
 /* ══ ROUTINE ══ */
 function renderRoutine(){renderRoutineItems();renderSavedRoutines();}
-
+ 
 function renderRoutineItems(){
   const el=document.getElementById('routine-items');
   if(!S.currentRoutineItems.length){el.innerHTML='<div style="font-size:11px;color:var(--text3);padding:6px 0;font-family:\'JetBrains Mono\',monospace">Sin ejercicios añadidos</div>';return;}
@@ -980,9 +980,9 @@ function renderRoutineItems(){
     <button onclick="removeRoutineItem(${i})" style="background:none;border:none;color:var(--text3);cursor:pointer;padding:4px"><i class="ti ti-trash" style="font-size:15px"></i></button>
   </div>`).join('');
 }
-
+ 
 function removeRoutineItem(i){S.currentRoutineItems.splice(i,1);save();renderRoutineItems();}
-
+ 
 function addToRoutine(){
   const sel=document.getElementById('routine-ex-select');
   const sets=parseInt(document.getElementById('r-sets').value)||3;
@@ -991,7 +991,7 @@ function addToRoutine(){
   S.currentRoutineItems.push({id:ex.id,name:ex.name,sets,reps});
   save();renderRoutineItems();notif(`${ex.name} añadido`);
 }
-
+ 
 function saveRoutine(){
   const name=document.getElementById('routine-name').value.trim()||'Rutina sin nombre';
   if(!S.currentRoutineItems.length){notif('Agrega ejercicios primero');return;}
@@ -999,7 +999,7 @@ function saveRoutine(){
   S.currentRoutineItems=[];document.getElementById('routine-name').value='';
   save();renderRoutine();notif('Rutina guardada');
 }
-
+ 
 function renderSavedRoutines(){
   const el=document.getElementById('saved-routines-list');
   if(!S.savedRoutines.length){el.innerHTML='<div style="font-size:11px;color:var(--text3);font-family:\'JetBrains Mono\',monospace">Sin rutinas guardadas</div>';return;}
@@ -1017,10 +1017,10 @@ function renderSavedRoutines(){
     <div class="sr-tags">${r.items.map(it=>`<span class="tag tag-green">${it.name}</span>`).join('')}</div>
   </div>`).join('');
 }
-
+ 
 function loadRoutine(i){S.currentRoutineItems=S.savedRoutines[i].items.map(it=>({...it}));save();renderRoutine();notif(`"${S.savedRoutines[i].name}" cargada`);}
 function deleteRoutine(i){S.savedRoutines.splice(i,1);save();renderSavedRoutines();}
-
+ 
 /* ══ OVERLOAD (Sobrecarga Progresiva) ══ */
 const OVERLOAD_EXERCISES=[
   {id:'pushup',name:'Lagartija',defaultSets:3,defaultReps:10},
@@ -1031,17 +1031,17 @@ const OVERLOAD_EXERCISES=[
   {id:'plank',name:'Plancha',defaultSets:3,defaultReps:30},
   {id:'lunge',name:'Zancada',defaultSets:3,defaultReps:10},
 ];
-
+ 
 function getWeekLabel(){
   const now=new Date();
   const start=new Date(now);start.setDate(now.getDate()-now.getDay());
   return`Sem ${start.toLocaleDateString('es-MX',{day:'numeric',month:'short'})}`;
 }
-
+ 
 function renderOverload(){
   document.getElementById('overload-week-label').textContent=getWeekLabel();
   const lastWeek=S.overloadWeeks.length?S.overloadWeeks[0]:null;
-
+ 
   document.getElementById('overload-list').innerHTML=OVERLOAD_EXERCISES.map(ex=>{
     const prev=lastWeek?lastWeek.data.find(d=>d.id===ex.id):null;
     const sets=prev?prev.sets:ex.defaultSets;
@@ -1066,7 +1066,7 @@ function renderOverload(){
       </div>
     </div>`;
   }).join('');
-
+ 
   const histEl=document.getElementById('overload-history');
   if(!S.overloadWeeks.length){histEl.innerHTML='<div style="font-size:11px;color:var(--text3);font-family:\'JetBrains Mono\',monospace;padding:8px 0">Sin semanas guardadas aún</div>';return;}
   histEl.innerHTML=S.overloadWeeks.slice(0,8).map((week,wi)=>`
@@ -1091,7 +1091,7 @@ function renderOverload(){
       }).join('')}
     </div>`).join('');
 }
-
+ 
 function saveOverloadWeek(){
   const data=OVERLOAD_EXERCISES.map(ex=>({
     id:ex.id,
@@ -1102,7 +1102,7 @@ function saveOverloadWeek(){
   S.overloadWeeks.unshift({label:getWeekLabel(),date:new Date().toISOString(),data,totalVol});
   save();renderOverload();notif('Semana guardada 📈');
 }
-
+ 
 /* ══ SKILLS ══ */
 function renderSkills(cat){
   const activeFilter=cat||document.querySelector('#skill-filter-bar .filter-btn.active')?.dataset?.cat||'all';
@@ -1146,20 +1146,20 @@ function renderSkills(cat){
     </div>`;
   }).join('');
 }
-
+ 
 function filterSkills(cat,btn){
   document.querySelectorAll('#skill-filter-bar .filter-btn').forEach(b=>b.classList.remove('active'));
   if(btn){btn.classList.add('active');btn.dataset.cat=cat;}
   renderSkills(cat);
 }
-
+ 
 function toggleSkillStep(skillId,stepId){
   if(!S.skillProgress[skillId])S.skillProgress[skillId]={};
   const cur=!!S.skillProgress[skillId][stepId];
   S.skillProgress[skillId][stepId]=!cur;
   save();renderSkills();notif(cur?'Paso desmarcado':'¡Paso completado! ⭐');
 }
-
+ 
 /* ══ PROGRESS ══ */
 function renderProgress(){
   const total=S.workouts.length;
@@ -1197,7 +1197,7 @@ function renderProgress(){
     </div>`;
   }).join('');
 }
-
+ 
 /* ══ SHARE ══ */
 let shareIdx=0;
 function openShareModal(idx){
@@ -1223,7 +1223,7 @@ function openShareModal(idx){
     <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:8px;color:#212125;text-align:center;letter-spacing:2px">CALFIT · CALISTENIA</div>`;
   document.getElementById('share-modal').classList.add('open');
 }
-
+ 
 function getShareText(){
   const w=S.workouts[shareIdx];
   const d=new Date(w.date);
@@ -1231,11 +1231,11 @@ function getShareText(){
   const lines=w.exercises.map(e=>`  • ${e.name}: ${e.sets}×${e.reps}`).join('\n');
   return`💪 *CALFIT — Sesión de calistenia*\n📅 ${d.toLocaleDateString('es-MX',{weekday:'long',day:'numeric',month:'long'}).toUpperCase()}\n\n${lines}\n\n🔥 *${fmtReps(w.totalReps)} reps totales*\n⚡ Racha: ${streak} días (${totalDays} días en calistenia)\n\n#Calistenia #CALFIT #CalisthenicsLife`;
 }
-
+ 
 function downloadShare(){notif('Captura la pantalla para guardar');}
 function shareWhatsApp(){window.open('https://wa.me/?text='+encodeURIComponent(getShareText()),'_blank');}
 function copyShareText(){navigator.clipboard.writeText(getShareText()).then(()=>notif('Texto copiado'));}
-
+ 
 /* ══ INIT ══ */
 load();
 applyTheme();
@@ -1245,3 +1245,4 @@ document.getElementById('routine-ex-select').innerHTML=EXERCISES.map(e=>`<option
 </script>
 </body>
 </html>
+ 
